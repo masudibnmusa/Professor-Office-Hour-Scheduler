@@ -22,4 +22,4 @@ class BookingResponse(BookingBase):
     created_at: Optional[datetime] = None
     
     class Config:
-        from_attributes = True
+        from_attributes = True  # ← Pydantic v2 syntax
