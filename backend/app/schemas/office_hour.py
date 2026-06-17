@@ -20,7 +20,7 @@ class OfficeHourResponse(OfficeHourBase):
     current_bookings: int
     
     class Config:
-        from_attributes = True
+        from_attributes = True  # ← Pydantic v2 syntax
 
 class ProfessorListResponse(BaseModel):
     id: int
@@ -29,4 +29,4 @@ class ProfessorListResponse(BaseModel):
     department: Optional[str] = None
     
     class Config:
-        from_attributes = True
+        from_attributes = True  # ← Pydantic v2 syntax
