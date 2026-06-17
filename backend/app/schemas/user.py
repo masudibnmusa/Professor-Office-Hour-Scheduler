@@ -22,7 +22,7 @@ class UserResponse(UserBase):
     department: Optional[str] = None
     
     class Config:
-        from_attributes = True
+        from_attributes = True  # ← Pydantic v2 syntax
 
 class Token(BaseModel):
     access_token: str
@@ -30,4 +30,3 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     email: Optional[str] = None
-    
